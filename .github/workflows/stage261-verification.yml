@@ -1,0 +1,26 @@
+name: stage261-verification
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-stage261:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - run: pip install cryptography
+
+      - run: |
+          chmod +x tools/run_stage261_demo.sh
+          ./tools/run_stage261_demo.sh

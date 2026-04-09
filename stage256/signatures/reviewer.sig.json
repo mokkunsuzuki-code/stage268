@@ -1,0 +1,11 @@
+{
+  "stage": "stage242",
+  "signer_id": "reviewer",
+  "role": "reviewer",
+  "independence_group": "external",
+  "artifact_path": "out/stage242/release_manifest.json",
+  "artifact_sha256": "e84a3ecc67d8165cbf8cb82f90e19e2106ae8ccbef632e6d401be05ce05d4070",
+  "public_key": "keys/reviewer_public.pem",
+  "signature_b64": "cuF2uieVWwv47/B5g2YfyncsLcswGmNoIag+GL3OL/KN7l/JIpeP89aQjjgTG0Fcd3WGgp45j2w0dJMgby8vBQ==",
+  "signed_at": "2026-04-02T06:41:38.136802+00:00"
+}

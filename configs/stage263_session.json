@@ -1,0 +1,13 @@
+{
+"protocol": "QSP",
+"stage": 263,
+"policy_version": "stage263-v1",
+"suite": "PQC+TranscriptBinding+Evidence",
+"session_id": "stage263-session-0001",
+"client_nonce": "client-nonce-stage263",
+"server_nonce": "server-nonce-stage263",
+"kem_ciphertext": "simulated-kem-ciphertext-stage263",
+"qkd_entropy": "optional-qkd-entropy-stage263",
+"qkd_mode": "optional",
+"fail_closed": true
+}
