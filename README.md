@@ -1,145 +1,99 @@
-# Stage263: QSP Execution → Evidence → Verification URL
+# Stage263: Verification URL (Public Proof)
 
-Stage263 turns QSP from a local proof artifact into a **publicly reviewable verification surface**.
+## Overview
 
-This stage adds:
+Stage263 introduces a **verification URL** mechanism.
 
-- actual QSP session execution
-- deterministic evidence generation
-- local verification from evidence
-- public verification URL via GitHub Pages
-- fail-closed verification checks
+This stage transforms:
+
+- Internal evidence → Publicly verifiable URL
+
+Anyone can verify:
+
+- Execution result
+- Generated artifacts
+- Integrity of the process
+
+via a simple web access.
+
+---
+
+## Key Concept
+
+Receipt → URL → Public Verification
+
+Instead of requiring local execution:
+
+- Evidence is published
+- Verification is accessible via URL
+- Anyone can independently confirm results
+
+---
 
 ## What This Stage Proves
 
-Stage263 proves the following chain:
+- Execution result can be published deterministically
+- Verification is accessible without local setup
+- Evidence is bound to a public URL
+- Reproducibility is externally observable
 
-QSP execution  
-→ evidence is generated automatically  
-→ evidence is verified automatically  
-→ verification artifacts are published at a public URL
+---
 
-This is the first stage where the system is presented as a **whole verification path**, not only as isolated evidence fragments.
+## Verification
 
-## Core Idea
+GitHub Actions:
 
-The important change is:
+- Workflow: stage263-verification-url
 
-- before Stage263: evidence existed
-- in Stage263: **execution itself produces reviewable public proof**
+Artifacts:
 
-That means a reviewer can check:
+- github-pages
+- stage263-verification-bundle
 
-1. the session transcript
-2. the derived evidence hashes
-3. the verification manifest
-4. the public verification page
-5. the local verification script result
+Public URL:
 
-## Repository Structure
+👉 GitHub Pages (see repository settings)
 
-- `configs/stage263_session.json`  
-  deterministic input used by the QSP execution demo
+---
 
-- `qsp/session.py`  
-  minimal QSP execution model for Stage263
+## Security Notice
 
-- `tools/run_stage263_qsp.py`  
-  runs the session and emits evidence
+All previously exposed keys are considered compromised and are no longer trusted.
 
-- `tools/build_verification_package.py`  
-  builds verification manifest and sha256 files
+A new Ed25519 key pair has been generated after the compromise response.
 
-- `tools/verify_stage263.py`  
-  verifies transcript hash, derived secret hash, evidence hash, manifest hash
+- Private key is kept out of version control
+- Rotated public key is tracked for verification
+- Previously exposed keys are permanently revoked
 
-- `tools/generate_verification_page.py`  
-  creates `site/index.html` and publishes verification artifacts
+---
 
-- `.github/workflows/stage263-verification-url.yml`  
-  CI pipeline for execution, verification, artifact publication, and GitHub Pages deploy
+## Important Notes
 
-## Local Run
+This stage does NOT:
 
-```bash
-chmod +x tools/run_stage263_qsp.sh
-./tools/run_stage263_qsp.sh
+- Claim cryptographic superiority
+- Replace existing verification standards
 
-Expected result:
+This stage DOES:
 
-out/stage263/evidence/session_evidence.json
-out/stage263/evidence/transcript.json
-out/stage263/verification/verification_manifest.json
-out/stage263/verification/verification_manifest.sha256.txt
-site/index.html
-Local Verification
-python3 tools/verify_stage263.py \
-  --evidence out/stage263/evidence/session_evidence.json \
-  --transcript out/stage263/evidence/transcript.json \
-  --manifest out/stage263/verification/verification_manifest.json \
-  --manifest-sha256 out/stage263/verification/verification_manifest.sha256.txt
+- Improve accessibility of verification
+- Reduce friction for external reviewers
 
-Expected output:
+---
 
-[OK] transcript hash matches
-[OK] derived secret hash matches
-[OK] evidence hash matches manifest
-[OK] manifest sha256 file matches
-[OK] Stage263 verification complete
-Public Verification URL
+## Position in QSP
 
-After GitHub Actions succeeds, GitHub Pages publishes the review page.
+Stage263 extends:
 
-Expected URL:
+- Stage262 (execution + evidence)
 
-https://mokkunsuzuki-code.github.io/stage263/
+into:
 
-The public page contains:
+- Public verification layer
 
-summary of the run
-commit / run identifiers
-evidence sha256
-links to downloadable verification artifacts
-local verification command for independent reviewers
-Security Meaning
+---
 
-This stage does not claim a new cryptographic proof.
+## License
 
-It proves something narrower and more honest:
-
-QSP execution is bound to generated evidence
-evidence is bound to a manifest
-manifest is bound to a public verification page
-verification fails closed on mismatch
-
-So the trust moves further away from:
-
-“please trust this key”
-
-and closer to:
-
-“run verification against the published evidence”
-Limitations
-
-This repository is still a research-stage verification framework.
-
-It does not claim:
-
-production deployment readiness
-formal proof of all protocol properties
-universal security beyond the stated execution model
-
-It does claim:
-
-deterministic evidence generation
-reproducible verification
-public reviewability
-fail-closed mismatch detection
-5-Minute Review Path
-Open the GitHub Pages verification URL
-Download session_evidence.json, transcript.json, and verification_manifest.json
-Run tools/verify_stage263.py
-Confirm all checks return [OK]
-License
-
-MIT License
+MIT License (2025)
