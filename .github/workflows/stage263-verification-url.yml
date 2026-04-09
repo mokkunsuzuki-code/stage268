@@ -9,7 +9,6 @@ permissions:
   contents: read
   pages: write
   id-token: write
-  actions: read
 
 concurrency:
   group: stage263-pages
@@ -23,6 +22,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -32,6 +34,11 @@ jobs:
         run: |
           chmod +x tools/run_stage263_qsp.sh
           ./tools/run_stage263_qsp.sh
+
+      - name: Verify generated site exists
+        run: |
+          test -f site/index.html
+          ls -R site
 
       - name: Upload verification bundle
         uses: actions/upload-artifact@v4
@@ -44,7 +51,7 @@ jobs:
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: site
+          path: ./site
 
   deploy-pages:
     needs: build-and-verify
