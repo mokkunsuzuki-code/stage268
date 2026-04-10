@@ -1,0 +1,33 @@
+{
+  "files": {
+    "release_manifest.json": {
+      "path": "out/release/release_manifest.json",
+      "sha256": "bdacf63c042512e9ccc8cb9e3e5f8c90978d22c9dd4dce7ccf842eff977e5d19"
+    },
+    "release_manifest.json.ots": {
+      "path": "out/release/release_manifest.json.ots",
+      "sha256": "6be3174f653a251502ac391d9c049a7dbed3d59a113695dd52fb0e1360028b6e"
+    },
+    "release_manifest.json.sha256": {
+      "path": "out/release/release_manifest.json.sha256",
+      "sha256": "4f291b66d6e6756c8957efa65641b28b469722d88d019edebbd8a2f8d571360c"
+    }
+  },
+  "generated_at_utc": "2026-04-10T06:10:39+00:00",
+  "github_actions": {
+    "actor": "mokkunsuzuki-code",
+    "ref": "refs/heads/main",
+    "repository": "mokkunsuzuki-code/stage264",
+    "run_attempt": "1",
+    "run_id": "24229204681",
+    "run_url": "https://github.com/mokkunsuzuki-code/stage264/actions/runs/24229204681",
+    "sha": "e00fc012c9ae868f2ffbac44730684b4391fd8d9",
+    "workflow": "stage264-release-manifest-ots"
+  },
+  "meaning": [
+    "This receipt proves the manifest stamping pipeline ran in GitHub Actions.",
+    "The manifest hash, sha256 sidecar, and ots proof are bound to this workflow execution."
+  ],
+  "stage": "stage264",
+  "version": 1
+}

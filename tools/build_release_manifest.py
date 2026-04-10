@@ -14,7 +14,7 @@ from datetime import datetime, timezone
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 OUT_DIR = ROOT / "out" / "release"
-BUNDLE_PATH = OUT_DIR / "stage264-source-bundle.tar.gz"
+BUNDLE_PATH = OUT_DIR / "stage265-source-bundle.tar.gz"
 MANIFEST_PATH = OUT_DIR / "release_manifest.json"
 SHA256_PATH = OUT_DIR / "release_manifest.json.sha256"
 
@@ -45,7 +45,6 @@ def tracked_files() -> list[pathlib.Path]:
         p = ROOT / rel
         if not p.is_file():
             continue
-        # build outputs / caches は bundle に入れない
         if rel.startswith("out/"):
             continue
         if rel.startswith(".git/"):
@@ -96,8 +95,8 @@ def main() -> None:
 
     manifest = {
         "version": 1,
-        "stage": "stage264",
-        "title": "Release manifest with OpenTimestamps and GitHub Actions receipt",
+        "stage": "stage265",
+        "title": "Public Verification URL with GitHub Pages and reproducible evidence bundle",
         "generated_at_utc": generated_at,
         "repository": {
             "remote": repo_url,
@@ -125,7 +124,8 @@ def main() -> None:
         "notes": [
             "The manifest binds the source bundle hash to a specific repository state.",
             "OpenTimestamps stamps the manifest file itself.",
-            "GitHub Actions receipt provides execution-time evidence for independent review."
+            "GitHub Actions receipt provides execution-time evidence for independent review.",
+            "GitHub Pages publishes a public verification URL for browser-based checking."
         ],
     }
 

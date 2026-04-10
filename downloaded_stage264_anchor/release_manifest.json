@@ -1,0 +1,34 @@
+{
+  "artifacts": [
+    {
+      "description": "Deterministic source bundle derived from tracked repository files",
+      "path": "out/release/stage264-source-bundle.tar.gz",
+      "sha256": "41da52e80f2bcd84a2aacf9f32d110ed140dc130b8045fe41b024d3e05e192c9"
+    }
+  ],
+  "generated_at_utc": "2026-04-10T06:10:38+00:00",
+  "github_actions_context": {
+    "actor": "mokkunsuzuki-code",
+    "ref": "refs/heads/main",
+    "repository": "mokkunsuzuki-code/stage264",
+    "run_attempt": "1",
+    "run_id": "24229204681",
+    "server_url": "https://github.com",
+    "sha": "e00fc012c9ae868f2ffbac44730684b4391fd8d9",
+    "workflow": "stage264-release-manifest-ots"
+  },
+  "notes": [
+    "The manifest binds the source bundle hash to a specific repository state.",
+    "OpenTimestamps stamps the manifest file itself.",
+    "GitHub Actions receipt provides execution-time evidence for independent review."
+  ],
+  "repository": {
+    "branch": "main",
+    "commit": "e00fc012c9ae868f2ffbac44730684b4391fd8d9",
+    "remote": "https://github.com/mokkunsuzuki-code/stage264",
+    "short_commit": "e00fc012c9ae"
+  },
+  "stage": "stage264",
+  "title": "Release manifest with OpenTimestamps and GitHub Actions receipt",
+  "version": 1
+}
