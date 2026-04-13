@@ -1,0 +1,175 @@
+{
+  "components": {
+    "execution_trust": {
+      "details": {
+        "run_url_evidence_files": [
+          "downloaded_stage249_anchor/github_anchor_receipt.json",
+          "downloaded_stage250_release_anchor/github_release_anchor_receipt.json",
+          "downloaded_stage253_session_anchor/out/anchors/github_session_anchor_receipt.json",
+          "stage256/downloaded_stage253_session_anchor/out/anchors/github_session_anchor_receipt.json",
+          "stage256/downloaded_stage254_session_anchor/out/anchors/github_session_anchor_receipt.json",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/downloaded_stage249_anchor/github_anchor_receipt.json",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/downloaded_stage250_release_anchor/github_release_anchor_receipt.json"
+        ],
+        "successful_run_records": [],
+        "workflow_files": [
+          ".github/workflows/stage265-pages.yml",
+          ".github/workflows/stage267-verification-trust-level.yml",
+          ".github/workflows/stage268-verification-score.yml"
+        ]
+      },
+      "score": 1.0,
+      "status": "workflows:yes, ci_evidence:yes"
+    },
+    "identity_trust": {
+      "details": {
+        "multi_signer_files": [
+          "external_signatures/config.yaml",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/.github/workflows/stage241-multi-party.yml",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/.github/workflows/stage242-multi-party.yml",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/external_signatures/config.yaml"
+        ],
+        "public_key_files": [
+          "downloaded_stage253_session_anchor/keys/checkpoint_witness_public.pem",
+          "downloaded_stage253_session_anchor/keys/local_witness_public.pem",
+          "gpg_pubkeys/stage234_maintainer_public.asc",
+          "gpg_pubkeys/stage235_github_public.asc",
+          "keys/new_public.pem",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/downloaded_stage253_session_anchor/keys/checkpoint_witness_public.pem",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/downloaded_stage253_session_anchor/keys/local_witness_public.pem",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/downloaded_stage254_session_anchor/keys/auditor_public.pem",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/downloaded_stage254_session_anchor/keys/checkpoint_public.pem",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/downloaded_stage254_session_anchor/keys/checkpoint_signing_public.pem",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/downloaded_stage254_session_anchor/keys/checkpoint_witness_public.pem",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/downloaded_stage254_session_anchor/keys/developer_public.pem",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/downloaded_stage254_session_anchor/keys/evidence_signing_public.pem",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/downloaded_stage254_session_anchor/keys/fail_evidence_public.pem",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/downloaded_stage254_session_anchor/keys/local_witness_public.pem",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/downloaded_stage254_session_anchor/keys/owner_public.pem",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/downloaded_stage254_session_anchor/keys/public/stage234_ed25519_public.pem",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/downloaded_stage254_session_anchor/keys/researcher_public.pem",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/downloaded_stage254_session_anchor/keys/review_record_public.pem",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/downloaded_stage254_session_anchor/keys/reviewer_example_public.pem",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/downloaded_stage254_session_anchor/keys/reviewer_public.pem",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/downloaded_stage254_session_anchor/keys/third_party_public.pem",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/downloaded_stage254_session_anchor/keys/witness_public.pem",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/gpg_pubkeys/stage234_maintainer_public.asc",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/gpg_pubkeys/stage235_github_public.asc",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/keys/auditor_public.pem",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/keys/checkpoint_public.pem",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/keys/checkpoint_signing_public.pem",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/keys/checkpoint_witness_public.pem",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/keys/developer_public.pem",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/keys/evidence_signing_public.pem",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/keys/fail_evidence_public.pem",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/keys/local_witness_public.pem",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/keys/owner_public.pem",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/keys/public/stage234_ed25519_public.pem",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/keys/researcher_public.pem",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/keys/review_record_public.pem",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/keys/reviewer_example_public.pem",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/keys/reviewer_public.pem",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/keys/third_party_public.pem",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/keys/witness_public.pem"
+        ],
+        "signature_files": [
+          "artifacts/qsp-stage236.tar.gz.asc",
+          "downloaded_stage250_release_anchor/release_manifest.json.asc",
+          "examples/evidence/summary.sig",
+          "gpg_pubkeys/stage234_maintainer_public.asc",
+          "gpg_pubkeys/stage235_github_public.asc",
+          "review_records/real_review_record.sig",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/artifacts/qsp-stage236.tar.gz.asc",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/downloaded_stage250_release_anchor/release_manifest.json.asc",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/examples/evidence/summary.sig",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/gpg_pubkeys/stage234_maintainer_public.asc",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/gpg_pubkeys/stage235_github_public.asc",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/review_records/real_review_record.sig"
+        ]
+      },
+      "score": 1.0,
+      "status": "signatures:yes, public_keys:yes, multi_signer:yes"
+    },
+    "integrity_trust": {
+      "details": {
+        "ots_files": [
+          "downloaded_stage250_release_anchor/release_manifest.json.ots",
+          "downloaded_stage253_session_anchor/out/session/session_manifest.json.ots",
+          "out/release/release_manifest.json.ots",
+          "site/release_manifest.json.ots",
+          "stage256/downloaded_stage253_session_anchor/out/session/session_manifest.json.ots",
+          "stage256/downloaded_stage254_session_anchor/out/session/session_manifest.json.ots",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/downloaded_stage250_release_anchor/release_manifest.json.ots"
+        ],
+        "sha256_files": [
+          "artifacts/qsp-stage236.sha256",
+          "dist/stage237_source_bundle.tar.gz.sha256",
+          "downloaded_stage249_anchor/anchor_request.sha256",
+          "downloaded_stage249_anchor/github_anchor_receipt.sha256",
+          "downloaded_stage250_release_anchor/github_release_anchor_receipt.sha256",
+          "downloaded_stage250_release_anchor/release_manifest.sha256",
+          "downloaded_stage253_session_anchor/out/session/session_manifest.json.sha256",
+          "downloaded_stage268_artifacts/stage268-verification-score/verification_score.json.sha256",
+          "evidence_bundle/evidence_bundle.sha256",
+          "evidence_bundle/sha256sums.txt",
+          "examples/evidence/summary.sha256.txt",
+          "out/release/release_manifest.json.sha256",
+          "out/verification_score/verification_score.json.sha256",
+          "site/release_manifest.json.sha256",
+          "stage256/downloaded_stage253_session_anchor/out/session/session_manifest.json.sha256",
+          "stage256/downloaded_stage254_session_anchor/out/anchors/session_manifest.json.sha256",
+          "stage256/downloaded_stage254_session_anchor/out/session/session_manifest.json.sha256",
+          "stage256/out/external_execution_record/review_log.json.sha256",
+          "stage256/out/external_runner_bundle/stage255_external_runner.tar.gz.sha256",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/artifacts/qsp-stage236.sha256",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/dist/stage237_source_bundle.tar.gz.sha256",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/downloaded_stage249_anchor/anchor_request.sha256",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/downloaded_stage249_anchor/github_anchor_receipt.sha256",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/downloaded_stage250_release_anchor/github_release_anchor_receipt.sha256",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/downloaded_stage250_release_anchor/release_manifest.sha256",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/evidence_bundle/evidence_bundle.sha256",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/evidence_bundle/sha256sums.txt",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/examples/evidence/summary.sha256.txt",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/out/external_independent/anchor_request.json.sha256",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/tools/write_bundle_sha256.py",
+          "tools/write_bundle_sha256.py"
+        ]
+      },
+      "score": 1.0,
+      "status": "sha256:yes, ots:yes"
+    },
+    "time_trust": {
+      "details": {
+        "bitcoin_related_files": [
+          "downloaded_stage249_anchor/anchor_request.json",
+          "downloaded_stage249_anchor/github_anchor_receipt.json",
+          "downloaded_stage249_anchor/history/request_0001.json",
+          "downloaded_stage253_session_anchor/out/session/qsp_session_result.json",
+          "downloaded_stage268_artifacts/stage268-verification-score/verification_score.json",
+          "out/release/release_manifest.json",
+          "out/verification_score/verification_score.json",
+          "package.json",
+          "review_records/review_001.json",
+          "review_records/review_002.json",
+          "review_records/review_003.json",
+          "site/release_manifest.json",
+          "stage256/downloaded_stage253_session_anchor/out/session/qsp_session_result.json",
+          "stage256/out/external_runner_bundle/stage255_bundle_manifest.json",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/downloaded_stage249_anchor/anchor_request.json",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/downloaded_stage249_anchor/github_anchor_receipt.json",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/downloaded_stage249_anchor/history/request_0001.json",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/review_records/review_001.json",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/review_records/review_002.json",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/review_records/review_003.json",
+          "stage256/out/extracted_stage255_runner/stage255_external_runner/stage255_bundle_manifest.json"
+        ],
+        "max_confirmations": 0.0
+      },
+      "score": 0.25,
+      "status": "bitcoin-evidence-found-but-confirmations-not-parsed"
+    }
+  },
+  "formula": "total_trust = time_trust * integrity_trust * execution_trust * identity_trust",
+  "stage": "stage268",
+  "total_trust": 0.25
+}

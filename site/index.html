@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Verification Score</title>
+</head>
+<body>
+  <h1>Stage268 Verification Score</h1>
+
+  <pre id="output">loading...</pre>
+
+  <script>
+    fetch('verification_score.json')
+      .then(r => r.json())
+      .then(data => {
+        document.getElementById('output').textContent =
+          JSON.stringify(data, null, 2);
+      });
+  </script>
+</body>
+</html>
