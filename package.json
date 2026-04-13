@@ -1,8 +1,8 @@
 {
-  "name": "stage266-verified-public-evidence",
+  "name": "stage267-verification-trust-level",
   "version": "1.0.0",
   "private": true,
-  "description": "Stage266: Verified Public Evidence",
+  "description": "Stage267: Verification Trust Level",
   "license": "MIT",
   "dependencies": {
     "opentimestamps": "^0.4.9"

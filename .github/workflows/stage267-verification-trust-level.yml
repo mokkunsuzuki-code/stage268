@@ -1,4 +1,4 @@
-name: stage266-verified-public-evidence
+name: stage267-verification-trust-level
 
 on:
   push:
@@ -16,7 +16,7 @@ jobs:
 
     env:
       REPO_OWNER: mokkunsuzuki-code
-      REPO_NAME: stage266
+      REPO_NAME: stage267
       MANIFEST_PATH: out/release/release_manifest.json
       OTS_PATH: out/release/release_manifest.json.ots
       RECEIPT_PATH: out/release/github_actions_receipt.json
@@ -53,8 +53,8 @@ jobs:
             ots upgrade "${OTS_PATH}" || true
           fi
 
-      - name: Generate status JSON
-        run: node tools/generate_stage266_status.js
+      - name: Generate trust-level status JSON
+        run: node tools/generate_stage267_status.js
 
       - name: Show status
         run: cat docs/status/verification_status.json
